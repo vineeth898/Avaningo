@@ -3,6 +3,9 @@ nav{
     align-items: center;
     justify-content: space-between;
 }
+nav img{
+    transition-duration: 0.5s;
+}
 .subnav{
     width: 85%;
     background-color: #bcf0ac;
@@ -15,6 +18,9 @@ nav{
     transition: 0.5s;
     margin-right: 2%;
 }
+.subnav a{
+    text-decoration: none;
+}
 .subnav:hover{
     height: 11vh;
     width: 86%;
@@ -22,7 +28,9 @@ nav{
 }
 body{
     margin:0;
-    background-color: #dffbe4;
+    background-color: #ecffef; 
+    background-image: url("../background2e.png");
+    background-size: 100% auto;
 }
 nav img{
     margin: 1% 0 1% 2%;
@@ -33,6 +41,8 @@ nav img{
     color: #28452a;
     font-size: 1.2em;
     transition-duration: 0.5s;
+    cursor: pointer;
+    text-decoration: none;
 }
 .subnav h3:hover{
     font-size: 1.35em;
@@ -54,9 +64,37 @@ nav img{
  font-size: 1.35em;
 }
 main{
-    height: 80vh;
-    width:95%;
-    background-color: rgb(237, 237, 237);
-    margin-left: 2.5%;
-    border-radius: 5em;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+.as img{
+    width: 15%;
+}
+.as{
+    display:flex;
+    flex-direction: column;
+    height:60vh;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 100%;
+}
+.row{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: end;
+}
+.row img{
+    transition-duration: 0.25s;
+}
+.row img:hover{
+    width:30%;
+    cursor: pointer;
+}
+.glass{
+    backdrop-filter:blur(8px);
+    width: 60%;
+    height: 60vh;
+    border-radius: 1em;
 }
